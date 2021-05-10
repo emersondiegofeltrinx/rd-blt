@@ -9,6 +9,7 @@ Clone this repository into any folder on your computer.
 ```
 git clone https://github.com/emersondiegofeltrin/rd-blt.git
 ```
+If you are using linux, make sure grant permission to write on folder where the project has been cloned.
 
 Run the following commands:
 
