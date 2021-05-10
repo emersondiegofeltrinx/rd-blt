@@ -26,7 +26,7 @@ It takes a couple of minutes, depending of your computer's resources
 cp .env.example .env
 ```
 
-### Prompt
+#### Prompt
 ```
 copy .env.example .env
 ```
