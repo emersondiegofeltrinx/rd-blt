@@ -10,7 +10,7 @@ Clone this repository into any folder on your computer.
 git clone https://github.com/emersondiegofeltrin/rd-blt.git
 ```
 
-On powershell, run the following commands:
+Run the following commands:
 
 ### Create containers
 
@@ -21,8 +21,14 @@ It takes a couple of minutes, depending of your computer's resources
 
 ### Copy environment file
 
+#### Powershell
 ```
 cp .env.example .env
+```
+
+### Prompt
+```
+copy .env.example .env
 ```
 
 ### Install dependencies
