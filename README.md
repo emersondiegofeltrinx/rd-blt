@@ -1,0 +1,53 @@
+# RD BLT
+
+This is a incidents CRUD, a simple project.
+
+## Installation
+
+Clone this repository into any folder on your computer.
+
+```
+git clone https://github.com/emersondiegofeltrin/rd-blt.git
+```
+
+On powershell, run the following commands:
+
+### Create containers
+
+```
+docker-compose up --build -d
+```
+It takes a couple of minutes, depending of your computer's resources
+
+### Copy environment file
+
+```
+cp .env.example .env
+```
+
+### Install dependencies
+```
+docker exec rd-blt-app composer install
+```
+
+### Initialize database
+
+```
+docker exec rd-blt-app composer run initialize-database
+```
+
+### Run unit tests
+
+```
+docker exec rd-blt-app composer run run-php-unit
+```
+
+### Run lint
+
+```
+docker exec rd-blt-app composer run run-php-lint
+```
+
+## Access the project
+
+After containers got up, access http://localhost:8000.

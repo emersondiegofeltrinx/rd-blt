@@ -1,0 +1,42 @@
+<?php
+
+return [
+    'NoItemsFound'        => 'Nenhum item encontrado.',
+    'Add'                 => 'Adicionar',
+    'Id'                  => 'ID',
+    'IncidentList'        => 'Lista de incidentes',
+    'Title'               => 'Título',
+    'Description'         => 'Descrição',
+    'Criticality'         => 'Criticidade',
+    'Type'                => 'Tipo',
+    'Status'              => 'Status',
+    'CreatedAt'           => 'Criado em',
+    'Back'                => 'Voltar',
+    'AddIncident'         => 'Adicionar incidente',
+    'CriticalityOptions'  => [
+        'H' => 'Alta',
+        'M' => 'Média',
+        'L' => 'Baixa',
+    ],
+    'TypeOptions'         => [
+        'A' => 'Alarme',
+        'I' => 'Incidente',
+        'O' => 'Outros',
+    ],
+    'StatusOptions'       => [
+        'A' => 'Ativo',
+        'I' => 'Inativo',
+    ],
+    'Active'              => 'Ativo',
+    'Save'                => 'Salvar',
+    'Cancel'              => 'Cancelar',
+    'SavedSuccessfully'   => 'Salvo com sucesso',
+    'InternalError'       => 'Ocorreu um erro interno',
+    'Edit'                => 'Editar',
+    'Delete'              => 'Apagar',
+    'RecordNotFound'      => 'Registro não encontrado',
+    'Update'              => 'Atualizar',
+    'EditIncident'        => 'Editar incidente',
+    'UpdatedSuccessfully' => 'Atualizado com sucesso',
+    'DeletedSuccessfully' => 'Removido com sucesso',
+];

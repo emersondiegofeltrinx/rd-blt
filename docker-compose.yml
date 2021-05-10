@@ -1,0 +1,42 @@
+version: "3.2"
+
+networks:
+  rd-blt-network:
+    driver: bridge
+    ipam:
+      driver: default
+
+services:
+  rd-blt-app:
+    container_name: rd-blt-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - ./:/var/www/html
+    networks:
+      - rd-blt-network
+
+  rd-blt-mysql:
+    container_name: rd-blt-mysql
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    networks:
+      - rd-blt-network
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: rd-blt
+
+  rd-blt-npm:
+    container_name: rd-blt-npm
+    build:
+      context: .
+      dockerfile: npm.Dockerfile
+    command: sh -c "npm install && npm run watch"
+    volumes:
+      - ./:/src
+    networks:
+      - rd-blt-network
