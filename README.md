@@ -1,6 +1,6 @@
 # RD BLT
 
-This is a incidents CRUD, a simple project.
+This is an incidents CRUD, a simple project.
 
 ## Installation
 
